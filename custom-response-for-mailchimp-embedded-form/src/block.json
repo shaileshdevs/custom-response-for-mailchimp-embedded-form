@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/custom-response-for-mailchimp-embedded-form",
+	"version": "0.1.0",
+	"title": "Custom Response For Mailchimp Embedded Form",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"supports": {
+		"customClassName": true,
+		"html": true,
+		"anchor": true
+	},
+	"attributes": {
+		"mailchimpDefaultResponseMessage": {
+			"type": "string",
+			"default": "Thank you for subscribing!"
+		},
+		"customMailchimpResponseMessage": {
+			"type": "string",
+			"default": "Thank you for subscribing"
+		},
+		"fileLink": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "custom-response-for-mailchimp-embedded-form",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
